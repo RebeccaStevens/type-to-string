@@ -4,7 +4,7 @@ Any donations would be much appreciated. 😄
 
 ## Enterprise Users
 
-`template-typescript-node-package` is available as part of the [Tidelift Subscription](https://tidelift.com/subscription/pkg/npm-template-typescript-node-package).
+`type-to-string` is available as part of the [Tidelift Subscription](https://tidelift.com/subscription/pkg/npm-type-to-string).
 
 ## Real money
 

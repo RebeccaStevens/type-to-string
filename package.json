@@ -1,16 +1,16 @@
 {
-  "name": "__package_name__",
+  "name": "type-to-string",
   "version": "0.0.0-development",
   "private": true,
   "description": "",
   "keywords": [],
-  "homepage": "https://github.com/RebeccaStevens/template-typescript-node-package#readme",
+  "homepage": "https://github.com/RebeccaStevens/type-to-string#readme",
   "bugs": {
-    "url": "https://github.com/RebeccaStevens/template-typescript-node-package/issues"
+    "url": "https://github.com/RebeccaStevens/type-to-string/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RebeccaStevens/template-typescript-node-package"
+    "url": "git+https://github.com/RebeccaStevens/type-to-string"
   },
   "license": "BSD-3-Clause",
   "author": {
