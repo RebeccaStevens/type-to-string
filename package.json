@@ -1,8 +1,12 @@
 {
   "name": "type-to-string",
   "version": "0.0.0-development",
-  "description": "",
-  "keywords": [],
+  "description": "Get a string representation of a TypeScript type.",
+  "keywords": [
+    "TypeScript",
+    "type",
+    "toString"
+  ],
   "homepage": "https://github.com/RebeccaStevens/type-to-string#readme",
   "bugs": {
     "url": "https://github.com/RebeccaStevens/type-to-string/issues"
