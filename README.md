@@ -1,6 +1,8 @@
 <div align="center">
 
-# Template for my Node Packages
+# Type to String
+
+Get a string representation of a TypeScript type.
 
 [![npm version](https://img.shields.io/npm/v/type-to-string.svg)](https://www.npmjs.com/package/type-to-string)
 [![CI](https://github.com/RebeccaStevens/type-to-string/actions/workflows/release.yml/badge.svg)](https://github.com/RebeccaStevens/type-to-string/actions/workflows/release.yml)
