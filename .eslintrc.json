@@ -21,6 +21,15 @@
     "node_modules",
     "pnpm-lock.yaml"
   ],
+  "rules": {
+    "functional/no-expression-statements": [
+      "error",
+      {
+        "ignoreVoid": true
+      }
+    ],
+    "functional/no-throw-statements": "off"
+  },
   "overrides": [
     {
       "files": ["**/*.test.ts"],
