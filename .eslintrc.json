@@ -25,14 +25,15 @@
     "functional/no-expression-statements": [
       "error",
       {
-        "ignoreVoid": true
+        "ignoreVoid": true,
+        "ignoreSelfReturning": true
       }
     ],
     "functional/no-throw-statements": "off"
   },
   "overrides": [
     {
-      "files": ["**/*.test.ts"],
+      "files": ["tests/**/*"],
       "plugins": ["vitest"],
       "extends": ["plugin:vitest/recommended", "plugin:functional/off"],
       "rules": {
@@ -41,7 +42,13 @@
         "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/no-unsafe-call": "off",
         "@typescript-eslint/no-unsafe-member-access": "off",
-        "@typescript-eslint/no-unsafe-return": "off"
+        "@typescript-eslint/no-unsafe-return": "off",
+        "vitest/expect-expect": [
+          "error",
+          {
+            "assertFunctionNames": ["expect", "runTests"]
+          }
+        ]
       }
     },
     {

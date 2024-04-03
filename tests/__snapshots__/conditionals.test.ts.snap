@@ -1,0 +1,69 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Conditionals > type Test<G> = G extends number ? { foo: number } : { foo: string }; 1`] = `
+{
+  "typeAlias": "Test<G>",
+  "typeReference": null,
+  "typeToString": "Test<G>",
+}
+`;
+
+exports[`Conditionals > type Test<G> = G extends number ? { foo: number } : { foo: string }; 2`] = `
+{
+  "typeNodeAlias": "Test<G>",
+  "typeNodeAsWritten": "G extends number ? { foo: number } : { foo: string }",
+  "typeNodeToString": null,
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Conditionals > type Test<G> = G extends number ? number : string; 1`] = `
+{
+  "typeAlias": "Test<G>",
+  "typeReference": null,
+  "typeToString": "Test<G>",
+}
+`;
+
+exports[`Conditionals > type Test<G> = G extends number ? number : string; 2`] = `
+{
+  "typeNodeAlias": "Test<G>",
+  "typeNodeAsWritten": "G extends number ? number : string",
+  "typeNodeToString": null,
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Conditionals > type Test<G> = G extends number ? readonly number[] : readonly string[]; 1`] = `
+{
+  "typeAlias": "Test<G>",
+  "typeReference": null,
+  "typeToString": "Test<G>",
+}
+`;
+
+exports[`Conditionals > type Test<G> = G extends number ? readonly number[] : readonly string[]; 2`] = `
+{
+  "typeNodeAlias": "Test<G>",
+  "typeNodeAsWritten": "G extends number ? readonly number[] : readonly string[]",
+  "typeNodeToString": null,
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Conditionals > type Test<G> = Readonly<G extends number ? { foo: number } : { foo: string }>; 1`] = `
+{
+  "typeAlias": "Readonly<T>",
+  "typeReference": null,
+  "typeToString": "Readonly<G extends number ? { foo: number; } : { foo: string; }>",
+}
+`;
+
+exports[`Conditionals > type Test<G> = Readonly<G extends number ? { foo: number } : { foo: string }>; 2`] = `
+{
+  "typeNodeAlias": "Test<G>",
+  "typeNodeAsWritten": "Readonly<G extends number ? { foo: number } : { foo: string }>",
+  "typeNodeToString": null,
+  "typeReferenceNode": "Readonly<T>",
+}
+`;

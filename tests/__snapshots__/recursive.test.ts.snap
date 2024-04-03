@@ -1,0 +1,226 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Recursive Types > Complex > %s 1`] = `
+{
+  "typeAlias": "TransposeArray<T>",
+  "typeReference": null,
+  "typeToString": "TransposeArray<T>",
+}
+`;
+
+exports[`Recursive Types > Complex > %s 2`] = `
+{
+  "typeNodeAlias": "TransposeArray<T>",
+  "typeNodeAsWritten": "T extends readonly [infer X, ...infer XS]
+    ? [X[], ...TransposeArray<XS>]
+    : T extends ReadonlyArray<infer X>
+      ? X[][]
+      : never",
+  "typeNodeToString": null,
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Recursive Types > direct > type Test = ReadonlyArray<Test | { foo: 1 }>; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": "ReadonlyArray<T>",
+  "typeToString": "Test",
+}
+`;
+
+exports[`Recursive Types > direct > type Test = ReadonlyArray<Test | { foo: 1 }>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "ReadonlyArray<Test | { foo: 1 }>",
+  "typeNodeToString": null,
+  "typeReferenceNode": "ReadonlyArray<T>",
+}
+`;
+
+exports[`Recursive Types > direct > type Test = string | ReadonlyArray<Test>; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Recursive Types > direct > type Test = string | ReadonlyArray<Test>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "string | ReadonlyArray<Test>",
+  "typeNodeToString": null,
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Recursive Types > direct > type Test = string | Test[]; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Recursive Types > direct > type Test = string | Test[]; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "string | Test[]",
+  "typeNodeToString": null,
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Recursive Types > generics > type Test<G> = { foo: Test<string> | string; }; 1`] = `
+{
+  "typeAlias": "Test<G>",
+  "typeReference": null,
+  "typeToString": "Test<G>",
+}
+`;
+
+exports[`Recursive Types > generics > type Test<G> = { foo: Test<string> | string; }; 2`] = `
+{
+  "typeNodeAlias": "Test<G>",
+  "typeNodeAsWritten": "{ foo: Test<string> | string; }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Recursive Types > generics > type Test<G> = G extends string ? { foo: string } : Test<string> 1`] = `
+{
+  "typeAlias": "Test<G>",
+  "typeReference": null,
+  "typeToString": "Test<G>",
+}
+`;
+
+exports[`Recursive Types > generics > type Test<G> = G extends string ? { foo: string } : Test<string> 2`] = `
+{
+  "typeNodeAlias": "Test<G>",
+  "typeNodeAsWritten": "G extends string ? { foo: string } : Test<string>",
+  "typeNodeToString": null,
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Recursive Types > generics > type Test<G> = G extends string ? Readonly<{ foo: Array<string>; }> : Test<string> 1`] = `
+{
+  "typeAlias": "Test<G>",
+  "typeReference": null,
+  "typeToString": "Test<G>",
+}
+`;
+
+exports[`Recursive Types > generics > type Test<G> = G extends string ? Readonly<{ foo: Array<string>; }> : Test<string> 2`] = `
+{
+  "typeNodeAlias": "Test<G>",
+  "typeNodeAsWritten": "G extends string ? Readonly<{ foo: Array<string>; }> : Test<string>",
+  "typeNodeToString": null,
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Recursive Types > generics > type Test<G> = G extends string ? Readonly<{ foo: string }> : Test<string> 1`] = `
+{
+  "typeAlias": "Test<G>",
+  "typeReference": null,
+  "typeToString": "Test<G>",
+}
+`;
+
+exports[`Recursive Types > generics > type Test<G> = G extends string ? Readonly<{ foo: string }> : Test<string> 2`] = `
+{
+  "typeNodeAlias": "Test<G>",
+  "typeNodeAsWritten": "G extends string ? Readonly<{ foo: string }> : Test<string>",
+  "typeNodeToString": null,
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Recursive Types > generics > type Test<G> = G extends string ? ReadonlyArray<string> : Test<string> 1`] = `
+{
+  "typeAlias": "Test<G>",
+  "typeReference": null,
+  "typeToString": "Test<G>",
+}
+`;
+
+exports[`Recursive Types > generics > type Test<G> = G extends string ? ReadonlyArray<string> : Test<string> 2`] = `
+{
+  "typeNodeAlias": "Test<G>",
+  "typeNodeAsWritten": "G extends string ? ReadonlyArray<string> : Test<string>",
+  "typeNodeToString": null,
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Recursive Types > generics > type Test<G> = Readonly<{ foo: Array<Test<string>> | string; }>; 1`] = `
+{
+  "typeAlias": "Readonly<T>",
+  "typeReference": null,
+  "typeToString": "Readonly<{ foo: string | Readonly<any>[]; }>",
+}
+`;
+
+exports[`Recursive Types > generics > type Test<G> = Readonly<{ foo: Array<Test<string>> | string; }>; 2`] = `
+{
+  "typeNodeAlias": "Test<G>",
+  "typeNodeAsWritten": "Readonly<{ foo: Array<Test<string>> | string; }>",
+  "typeNodeToString": "Readonly<{}>",
+  "typeReferenceNode": "Readonly<T>",
+}
+`;
+
+exports[`Recursive Types > generics > type Test<G> = Readonly<{ foo: ReadonlyArray<Test<string>> | G; }>; 1`] = `
+{
+  "typeAlias": "Readonly<T>",
+  "typeReference": null,
+  "typeToString": "Readonly<{ foo: G | readonly Readonly<{ foo: string | readonly Readonly<any>[]; }>[]; }>",
+}
+`;
+
+exports[`Recursive Types > generics > type Test<G> = Readonly<{ foo: ReadonlyArray<Test<string>> | G; }>; 2`] = `
+{
+  "typeNodeAlias": "Test<G>",
+  "typeNodeAsWritten": "Readonly<{ foo: ReadonlyArray<Test<string>> | G; }>",
+  "typeNodeToString": "Readonly<{}>",
+  "typeReferenceNode": "Readonly<T>",
+}
+`;
+
+exports[`Recursive Types > generics > type Test<G> = Readonly<{ foo: Test<string> | string; }>; 1`] = `
+{
+  "typeAlias": "Readonly<T>",
+  "typeReference": null,
+  "typeToString": "Readonly<{ foo: string | Readonly<any>; }>",
+}
+`;
+
+exports[`Recursive Types > generics > type Test<G> = Readonly<{ foo: Test<string> | string; }>; 2`] = `
+{
+  "typeNodeAlias": "Test<G>",
+  "typeNodeAsWritten": "Readonly<{ foo: Test<string> | string; }>",
+  "typeNodeToString": "Readonly<{}>",
+  "typeReferenceNode": "Readonly<T>",
+}
+`;
+
+exports[`Recursive Types > nested > type Foo<U> = { readonly foo: Foo<Foo<U>>; }; 1`] = `
+{
+  "typeAlias": "Foo<U>",
+  "typeReference": null,
+  "typeToString": "Foo<U>",
+}
+`;
+
+exports[`Recursive Types > nested > type Foo<U> = { readonly foo: Foo<Foo<U>>; }; 2`] = `
+{
+  "typeNodeAlias": "Foo<U>",
+  "typeNodeAsWritten": "{ readonly foo: Foo<Foo<U>>; }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;

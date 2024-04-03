@@ -1,68 +1,62 @@
-import { type Program, type Type, type TypeNode } from "typescript";
+import ts, { type Node, type Program, type Type } from "typescript";
 
-import { type TypeName, createTypeName } from "./TypeName";
-import { type TypeToStringCache, type TypeData } from "./types";
-import { cacheTypeName, getCachedTypeName, getTypeData } from "./utils";
-
-/**
- * A global cache that can be used between consumers.
- */
-const globalTypeCache: TypeToStringCache = new WeakMap();
+import { getTypeReferenceNodeAsString } from "./type-node-to-string";
+import { getTypeWithTypeArgumentsString } from "./utils";
 
 /**
  * Get string representations of the given {@link Type}.
- *
- * If you have access to the {@link TypeNode}, use {@link typeNodeToString}
- * instead as it contains more infomation about the type.
  */
 export function typeToString(
   program: Program,
   // eslint-disable-next-line functional/prefer-immutable-types
   type: Type,
-  useCache: TypeToStringCache | boolean = true,
-): TypeName {
-  const typeData = getTypeData(type, null);
-  return typeDataToString(program, useCache, typeData);
+  enclosingDeclaration: ts.Node | undefined = undefined,
+  flags: ts.TypeFormatFlags = ts.TypeFormatFlags.None,
+): string {
+  const checker = program.getTypeChecker();
+  return checker.typeToString(type, enclosingDeclaration, flags);
 }
 
 /**
- * Get string representations of the given {@link TypeNode}.
+ * Get the alias name of the given {@link Type}.
  */
-export function typeNodeToString(
-  program: Program,
+export function getTypeAliasAsString(
   // eslint-disable-next-line functional/prefer-immutable-types
-  typeNode: TypeNode,
-  useCache: TypeToStringCache | boolean = true,
-): TypeName {
-  const typeData = getTypeData(
-    program.getTypeChecker().getTypeFromTypeNode(typeNode),
-    typeNode,
-  );
-  return typeDataToString(program, useCache, typeData);
-}
+  type: Type,
+  withArguments = false,
+): string | null {
+  const t = "target" in type ? (type.target as Type) : type;
 
-/**
- * Calculate the string representations of the given {@link TypeData}.
- */
-export function typeDataToString(
-  program: Program,
-  useCache: TypeToStringCache | boolean,
-  typeData: Readonly<TypeData>,
-): TypeName {
-  const cache: TypeToStringCache =
-    useCache === true
-      ? globalTypeCache
-      : useCache === false
-        ? new WeakMap()
-        : useCache;
-
-  const cached = getCachedTypeName(program, cache, typeData);
-  if (cached !== undefined) {
-    return cached;
+  const name = t.aliasSymbol?.getName() ?? null;
+  if (!withArguments || name === null) {
+    return name;
   }
 
-  const typeName = createTypeName(program, cache, typeData);
-  cacheTypeName(program, cache, typeData, typeName);
+  const typeArguments = t.aliasTypeArguments?.map(
+    (argument) => argument.getSymbol()?.getName() ?? null,
+  );
 
-  return typeName;
+  return getTypeWithTypeArgumentsString(name, typeArguments);
+}
+
+/**
+ * Get the name of the type reference on the given {@link Type}.
+ *
+ * If the given {@link Type} is not a type reference, `null` will be returned.
+ */
+export function getTypeReferenceAsString(
+  program: Program,
+  // eslint-disable-next-line functional/prefer-immutable-types
+  type: Type,
+  withArguments = false,
+): string | null {
+  if (!("node" in type)) {
+    return null;
+  }
+
+  return getTypeReferenceNodeAsString(
+    program,
+    type.node as Node,
+    withArguments,
+  );
 }

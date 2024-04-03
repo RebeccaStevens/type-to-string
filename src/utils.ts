@@ -1,95 +1,71 @@
-import { isIntrinsicErrorType } from "ts-api-utils";
-import { type Program, type Type, type TypeNode } from "typescript";
-
-import { type TypeName } from "./TypeName";
-import { type TypeToStringCache, type TypeData } from "./types";
-
-/**
- * Get the {@link TypeData} from the given {@link Type} and {@link TypeNode}.
- *
- * @throws if the type is an error type.
- */
-export function getTypeData(
-  type: Readonly<Type>,
-  typeNode: Readonly<TypeNode> | null | undefined,
-): TypeData {
-  if (isIntrinsicErrorType(type)) {
-    throw new Error("ErrorType encountered.");
-  }
-
-  if (
-    typeNode === undefined ||
-    typeNode === null ||
-    isAnonymousTypeNode(typeNode)
-  ) {
-    return {
-      type,
-      typeNode: null,
-    };
-  }
-
-  return {
-    type,
-    typeNode,
-  };
-}
+import ts, {
+  type EntityName,
+  type Identifier,
+  type PrivateIdentifier,
+  type QualifiedName,
+} from "typescript";
 
 /**
- * Check if a {@link TypeNode} is anonymous.
+ * Merge the given type and type arguments string representations.
  */
-export function isAnonymousTypeNode(typeNode: Readonly<TypeNode>): boolean {
-  return typeNode.pos < 0;
-}
-
-/**
- * Is the given type-like a {@link TypeNode}.
- */
-export function isTypeNode(typeLike: Type | TypeNode): typeLike is TypeNode {
-  return Object.hasOwn(typeLike, "kind");
-}
-
-/**
- * Cache a {@link TypeName} by a its {@link TypeData}.
- */
-// eslint-disable-next-line functional/no-return-void
-export function cacheTypeName(
-  program: Program,
-  cache: TypeToStringCache,
-  typeData: Readonly<TypeData>,
-
-  value: TypeName,
+export function getTypeWithTypeArgumentsString(
+  name: string,
+  typeArguments: ReadonlyArray<string | null> | undefined,
 ) {
-  const { type, typeNode } = typeData;
-
-  const checker = program.getTypeChecker();
-  const identity = checker.getRecursionIdentity(type);
-
-  // eslint-disable-next-line functional/no-conditional-statements
-  if (typeNode !== null) {
-    // eslint-disable-next-line functional/no-expression-statements
-    cache.set(typeNode, value);
+  if (typeArguments === undefined) {
+    return name;
   }
-  // eslint-disable-next-line functional/no-expression-statements
-  cache.set(identity, value);
+
+  if (typeArguments.includes(null)) {
+    return null;
+  }
+
+  return `${name}<${typeArguments.join(", ")}>`;
 }
 
 /**
- * Get the {@link TypeName} for the given {@link TypeData}.
+ * Get string representations of the given entity name.
  */
-export function getCachedTypeName(
-  program: Program,
-  cache: TypeToStringCache,
-  typeData: Readonly<TypeData>,
-): TypeName | undefined {
-  const checker = program.getTypeChecker();
+export function entityNameToString(
+  // eslint-disable-next-line functional/prefer-immutable-types
+  entityName: EntityName,
+): string {
+  return ts.isIdentifier(entityName)
+    ? identifierToString(entityName)
+    : qualifiedNameToString(entityName);
+}
 
-  const { type, typeNode } = typeData;
+/**
+ * Get string representations of the given identifier.
+ */
+export function identifierToString(
+  // eslint-disable-next-line functional/prefer-immutable-types
+  identifier: Identifier | PrivateIdentifier,
+): string {
+  return identifier.escapedText as string;
+}
 
-  if (typeNode !== null) {
-    const value = cache.get(typeNode);
-    if (value !== undefined) {
-      return value;
-    }
+/**
+ * Get string representations of the given qualified name.
+ */
+// eslint-disable-next-line functional/prefer-immutable-types
+export function qualifiedNameToString(qualifiedName: QualifiedName): string {
+  return `${entityNameToString(qualifiedName.left)}.${identifierToString(
+    qualifiedName.right,
+  )}`;
+}
+
+/**
+ * Get the highest set bit in the given value.
+ */
+export function bitwiseMax(value: number) {
+  let m_shifts = 0;
+
+  // eslint-disable-next-line functional/no-loop-statements, no-cond-assign, no-param-reassign
+  while ((value >>= 1) !== 0) {
+    // eslint-disable-next-line functional/no-expression-statements
+    m_shifts++;
   }
-  return cache.get(checker.getRecursionIdentity(type));
+
+  return 1 << m_shifts;
 }
