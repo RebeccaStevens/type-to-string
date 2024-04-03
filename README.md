@@ -15,6 +15,18 @@ Get a string representation of a TypeScript type.
 
 </div>
 
+This project is really just me playing with different ways to get string representions of TypeScript types.
+
+For most users, you can probably just use TypeScript built in functions:
+
+```ts
+checker.typeToString(type);
+```
+
+```ts
+typeNode.getText();
+```
+
 ## Donate
 
 [Any donations would be much appreciated](./DONATIONS.md). 😄
