@@ -1,6 +1,18 @@
 # Changelog
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+# [2.0.0](https://github.com/RebeccaStevens/type-to-string/compare/v1.0.1...v2.0.0) (2024-04-06)
+
+
+### Features
+
+* rework project ([928314e](https://github.com/RebeccaStevens/type-to-string/commit/928314e1e3ed0651b964592de29ae29df05c261a))
+
+
+### BREAKING CHANGES
+
+* rework project
+
 ## [1.0.1](https://github.com/RebeccaStevens/type-to-string/compare/v1.0.0...v1.0.1) (2024-04-03)
 
 
