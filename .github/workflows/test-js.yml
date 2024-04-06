@@ -13,3 +13,6 @@ jobs:
       - uses: ./.github/actions/prepare
       - run: pnpm run test
       - uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          slug: RebeccaStevens/type-to-string
