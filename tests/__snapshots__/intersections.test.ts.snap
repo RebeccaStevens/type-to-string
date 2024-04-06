@@ -1,0 +1,103 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Intersections > same props > type Test = { readonly foo: ReadonlyArray<string>; } & { readonly foo: Array<string>; }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Intersections > same props > type Test = { readonly foo: ReadonlyArray<string>; } & { readonly foo: Array<string>; }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ readonly foo: ReadonlyArray<string>; } & { readonly foo: Array<string>; }",
+  "typeNodeToString": null,
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Intersections > same props > type Test = ReadonlyArray<number> & { readonly 0: number; }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Intersections > same props > type Test = ReadonlyArray<number> & { readonly 0: number; }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "ReadonlyArray<number> & { readonly 0: number; }",
+  "typeNodeToString": null,
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Intersections > simple > type Test = { foo: string; } & { bar: string; }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Intersections > simple > type Test = { foo: string; } & { bar: string; }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ foo: string; } & { bar: string; }",
+  "typeNodeToString": null,
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Intersections > simple > type Test = Readonly<{ foo: string; } & { bar: string; }>; 1`] = `
+{
+  "typeAlias": "Readonly<T>",
+  "typeReference": null,
+  "typeToString": "Readonly<{ foo: string; } & { bar: string; }>",
+}
+`;
+
+exports[`Intersections > simple > type Test = Readonly<{ foo: string; } & { bar: string; }>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "Readonly<{ foo: string; } & { bar: string; }>",
+  "typeNodeToString": null,
+  "typeReferenceNode": "Readonly<T>",
+}
+`;
+
+exports[`Intersections > simple > type Test = Readonly<{ foo: string; }> & Readonly<{ bar: string; }>; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Intersections > simple > type Test = Readonly<{ foo: string; }> & Readonly<{ bar: string; }>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "Readonly<{ foo: string; }> & Readonly<{ bar: string; }>",
+  "typeNodeToString": null,
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Intersections > simple > type Test = readonly (number | string)[] & readonly (number | boolean)[]; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Intersections > simple > type Test = readonly (number | string)[] & readonly (number | boolean)[]; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "readonly (number | string)[] & readonly (number | boolean)[]",
+  "typeNodeToString": null,
+  "typeReferenceNode": null,
+}
+`;

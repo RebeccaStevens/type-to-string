@@ -1,3 +1,13 @@
-export { typeToString, typeNodeToString } from "./type-to-string";
-export { type TypeName } from "./TypeName";
-export { type TypeToStringCache } from "./types";
+export {
+  getTypeAliasAsString,
+  getTypeReferenceAsString,
+  typeToString,
+} from "./type-to-string";
+
+export {
+  TypeNodeFormatFlags,
+  getTypeNodeAliasAsString,
+  getTypeReferenceNodeAsString,
+  typeNodeAsWritten,
+  typeNodeToString,
+} from "./type-node-to-string";

@@ -1,0 +1,205 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Call Signatures > type Test = { (): string; bar: number }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Call Signatures > type Test = { (): string; bar: number }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ (): string; bar: number }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Call Signatures > type Test = { (): void; bar: number }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Call Signatures > type Test = { (): void; bar: number }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ (): void; bar: number }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Call Signatures > type Test = { (): void; readonly bar: number }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Call Signatures > type Test = { (): void; readonly bar: number }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ (): void; readonly bar: number }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Call Signatures > type Test = { (): void; readonly bar: readonly ({ foo: number })[] }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Call Signatures > type Test = { (): void; readonly bar: readonly ({ foo: number })[] }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ (): void; readonly bar: readonly ({ foo: number })[] }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Call Signatures > type Test = { (): void; readonly bar: readonly number[] }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Call Signatures > type Test = { (): void; readonly bar: readonly number[] }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ (): void; readonly bar: readonly number[] }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Call Signatures > type Test = { (foo: { baz: number }): string; bar: number }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Call Signatures > type Test = { (foo: { baz: number }): string; bar: number }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ (foo: { baz: number }): string; bar: number }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Call Signatures > type Test = { (foo: { baz: number }): string; readonly bar: number }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Call Signatures > type Test = { (foo: { baz: number }): string; readonly bar: number }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ (foo: { baz: number }): string; readonly bar: number }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Call Signatures > type Test = { (foo: number): string; readonly bar: number }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Call Signatures > type Test = { (foo: number): string; readonly bar: number }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ (foo: number): string; readonly bar: number }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Call Signatures > type Test = { (foo: string): void; bar: number }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Call Signatures > type Test = { (foo: string): void; bar: number }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ (foo: string): void; bar: number }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Call Signatures > type Test = Readonly<{ (): void; bar: number }>; 1`] = `
+{
+  "typeAlias": "Readonly<T>",
+  "typeReference": null,
+  "typeToString": "Readonly<{ (): void; bar: number; }>",
+}
+`;
+
+exports[`Call Signatures > type Test = Readonly<{ (): void; bar: number }>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "Readonly<{ (): void; bar: number }>",
+  "typeNodeToString": "Readonly<{}>",
+  "typeReferenceNode": "Readonly<T>",
+}
+`;
+
+exports[`Call Signatures > type Test = Readonly<{ (foo: { baz: number }): string; bar: number }>; 1`] = `
+{
+  "typeAlias": "Readonly<T>",
+  "typeReference": null,
+  "typeToString": "Readonly<{ (foo: { baz: number; }): string; bar: number; }>",
+}
+`;
+
+exports[`Call Signatures > type Test = Readonly<{ (foo: { baz: number }): string; bar: number }>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "Readonly<{ (foo: { baz: number }): string; bar: number }>",
+  "typeNodeToString": "Readonly<{}>",
+  "typeReferenceNode": "Readonly<T>",
+}
+`;
+
+exports[`Call Signatures > type Test = Readonly<{ (foo: number): string; bar: number }>; 1`] = `
+{
+  "typeAlias": "Readonly<T>",
+  "typeReference": null,
+  "typeToString": "Readonly<{ (foo: number): string; bar: number; }>",
+}
+`;
+
+exports[`Call Signatures > type Test = Readonly<{ (foo: number): string; bar: number }>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "Readonly<{ (foo: number): string; bar: number }>",
+  "typeNodeToString": "Readonly<{}>",
+  "typeReferenceNode": "Readonly<T>",
+}
+`;

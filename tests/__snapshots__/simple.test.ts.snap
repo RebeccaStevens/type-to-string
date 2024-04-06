@@ -1,0 +1,722 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`arrays > type Test = Array<string>; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": "Array<T>",
+  "typeToString": "Test",
+}
+`;
+
+exports[`arrays > type Test = Array<string>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "Array<string>",
+  "typeNodeToString": "Array<string>",
+  "typeReferenceNode": "Array<T>",
+}
+`;
+
+exports[`arrays > type Test = Readonly<Array<string>>; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "readonly string[]",
+}
+`;
+
+exports[`arrays > type Test = Readonly<Array<string>>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "Readonly<Array<string>>",
+  "typeNodeToString": "Readonly<Array<string>>",
+  "typeReferenceNode": "Readonly<T>",
+}
+`;
+
+exports[`arrays > type Test = Readonly<string[]>; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "readonly string[]",
+}
+`;
+
+exports[`arrays > type Test = Readonly<string[]>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "Readonly<string[]>",
+  "typeNodeToString": "Readonly<string[]>",
+  "typeReferenceNode": "Readonly<T>",
+}
+`;
+
+exports[`arrays > type Test = ReadonlyArray<{ foo: string }>; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": "ReadonlyArray<T>",
+  "typeToString": "Test",
+}
+`;
+
+exports[`arrays > type Test = ReadonlyArray<{ foo: string }>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "ReadonlyArray<{ foo: string }>",
+  "typeNodeToString": "ReadonlyArray<{}>",
+  "typeReferenceNode": "ReadonlyArray<T>",
+}
+`;
+
+exports[`arrays > type Test = ReadonlyArray<string>; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": "ReadonlyArray<T>",
+  "typeToString": "Test",
+}
+`;
+
+exports[`arrays > type Test = ReadonlyArray<string>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "ReadonlyArray<string>",
+  "typeNodeToString": "ReadonlyArray<string>",
+  "typeReferenceNode": "ReadonlyArray<T>",
+}
+`;
+
+exports[`arrays > type Test = readonly { foo: string }[]; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": "Array<T>",
+  "typeToString": "Test",
+}
+`;
+
+exports[`arrays > type Test = readonly { foo: string }[]; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "readonly { foo: string }[]",
+  "typeNodeToString": "readonly {}[]",
+  "typeReferenceNode": "ReadonlyArray<T>",
+}
+`;
+
+exports[`arrays > type Test = readonly string[]; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": "Array<T>",
+  "typeToString": "Test",
+}
+`;
+
+exports[`arrays > type Test = readonly string[]; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "readonly string[]",
+  "typeNodeToString": "readonly string[]",
+  "typeReferenceNode": "ReadonlyArray<T>",
+}
+`;
+
+exports[`arrays > type Test = string[]; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": "Array<T>",
+  "typeToString": "Test",
+}
+`;
+
+exports[`arrays > type Test = string[]; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "string[]",
+  "typeNodeToString": "string[]",
+  "typeReferenceNode": "Array<T>",
+}
+`;
+
+exports[`functions > type Test = () => number; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`functions > type Test = () => number; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "() => number",
+  "typeNodeToString": null,
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`functions > type Test = (foo: { bar: string; }) => { baz: number; }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`functions > type Test = (foo: { bar: string; }) => { baz: number; }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "(foo: { bar: string; }) => { baz: number; }",
+  "typeNodeToString": null,
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`functions > type Test = { (): number; }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`functions > type Test = { (): number; }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ (): number; }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`functions > type Test = { (foo: { bar: string; }): { baz: number; } }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`functions > type Test = { (foo: { bar: string; }): { baz: number; } }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ (foo: { bar: string; }): { baz: number; } }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`methods > type Test = { foo(): string; }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`methods > type Test = { foo(): string; }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ foo(): string; }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`methods > type Test = { foo: () => string; }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`methods > type Test = { foo: () => string; }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ foo: () => string; }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`methods > type Test = { readonly foo: () => string; }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`methods > type Test = { readonly foo: () => string; }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ readonly foo: () => string; }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`methods > type Test = Readonly<{ foo(): string; }>; 1`] = `
+{
+  "typeAlias": "Readonly<T>",
+  "typeReference": null,
+  "typeToString": "Readonly<{ foo(): string; }>",
+}
+`;
+
+exports[`methods > type Test = Readonly<{ foo(): string; }>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "Readonly<{ foo(): string; }>",
+  "typeNodeToString": "Readonly<{}>",
+  "typeReferenceNode": "Readonly<T>",
+}
+`;
+
+exports[`primitives > bigint 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "bigint",
+}
+`;
+
+exports[`primitives > bigint 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "bigint",
+  "typeNodeToString": "bigint",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`primitives > boolean 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "boolean",
+}
+`;
+
+exports[`primitives > boolean 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "boolean",
+  "typeNodeToString": "boolean",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`primitives > null 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "null",
+}
+`;
+
+exports[`primitives > null 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "null",
+  "typeNodeToString": "null",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`primitives > number 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "number",
+}
+`;
+
+exports[`primitives > number 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "number",
+  "typeNodeToString": "number",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`primitives > string 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "string",
+}
+`;
+
+exports[`primitives > string 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "string",
+  "typeNodeToString": "string",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`primitives > symbol 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "symbol",
+}
+`;
+
+exports[`primitives > symbol 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "symbol",
+  "typeNodeToString": "symbol",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`primitives > undefined 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "undefined",
+}
+`;
+
+exports[`primitives > undefined 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "undefined",
+  "typeNodeToString": "undefined",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`primitives > unique symbol 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "symbol",
+}
+`;
+
+exports[`primitives > unique symbol 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "unique symbol",
+  "typeNodeToString": "symbol",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`private identifiers > class Foo { #privateField = "foo"; } 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "string",
+}
+`;
+
+exports[`private identifiers > class Foo { #privateMember() {}; } 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "() => void",
+}
+`;
+
+exports[`private identifiers > class Foo { readonly #readonlyPrivateField = "foo"; } 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": ""foo"",
+}
+`;
+
+exports[`records > type Test = { foo: string; }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`records > type Test = { foo: string; }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ foo: string; }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`records > type Test = { readonly foo: string; }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`records > type Test = { readonly foo: string; }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ readonly foo: string; }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`records > type Test = Readonly<{ foo: string; }>; 1`] = `
+{
+  "typeAlias": "Readonly<T>",
+  "typeReference": null,
+  "typeToString": "Readonly<{ foo: string; }>",
+}
+`;
+
+exports[`records > type Test = Readonly<{ foo: string; }>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "Readonly<{ foo: string; }>",
+  "typeNodeToString": "Readonly<{}>",
+  "typeReferenceNode": "Readonly<T>",
+}
+`;
+
+exports[`sets and maps > type Test = Map<string, string>; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": "Map<K, V>",
+  "typeToString": "Test",
+}
+`;
+
+exports[`sets and maps > type Test = Map<string, string>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "Map<string, string>",
+  "typeNodeToString": "Map<string, string>",
+  "typeReferenceNode": "Map<K, V>",
+}
+`;
+
+exports[`sets and maps > type Test = Readonly<ReadonlyMap<string, string>>; 1`] = `
+{
+  "typeAlias": "Readonly<T>",
+  "typeReference": null,
+  "typeToString": "Readonly<ReadonlyMap<string, string>>",
+}
+`;
+
+exports[`sets and maps > type Test = Readonly<ReadonlyMap<string, string>>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "Readonly<ReadonlyMap<string, string>>",
+  "typeNodeToString": "Readonly<ReadonlyMap<string, string>>",
+  "typeReferenceNode": "Readonly<T>",
+}
+`;
+
+exports[`sets and maps > type Test = Readonly<ReadonlySet<string>>; 1`] = `
+{
+  "typeAlias": "Readonly<T>",
+  "typeReference": null,
+  "typeToString": "Readonly<ReadonlySet<string>>",
+}
+`;
+
+exports[`sets and maps > type Test = Readonly<ReadonlySet<string>>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "Readonly<ReadonlySet<string>>",
+  "typeNodeToString": "Readonly<ReadonlySet<string>>",
+  "typeReferenceNode": "Readonly<T>",
+}
+`;
+
+exports[`sets and maps > type Test = ReadonlyMap<{ foo: string }, { bar: string }>; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": "ReadonlyMap<K, V>",
+  "typeToString": "Test",
+}
+`;
+
+exports[`sets and maps > type Test = ReadonlyMap<{ foo: string }, { bar: string }>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "ReadonlyMap<{ foo: string }, { bar: string }>",
+  "typeNodeToString": "ReadonlyMap<{}, {}>",
+  "typeReferenceNode": "ReadonlyMap<K, V>",
+}
+`;
+
+exports[`sets and maps > type Test = ReadonlyMap<string, string>; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": "ReadonlyMap<K, V>",
+  "typeToString": "Test",
+}
+`;
+
+exports[`sets and maps > type Test = ReadonlyMap<string, string>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "ReadonlyMap<string, string>",
+  "typeNodeToString": "ReadonlyMap<string, string>",
+  "typeReferenceNode": "ReadonlyMap<K, V>",
+}
+`;
+
+exports[`sets and maps > type Test = ReadonlySet<{ foo: string }>; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": "ReadonlySet<T>",
+  "typeToString": "Test",
+}
+`;
+
+exports[`sets and maps > type Test = ReadonlySet<{ foo: string }>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "ReadonlySet<{ foo: string }>",
+  "typeNodeToString": "ReadonlySet<{}>",
+  "typeReferenceNode": "ReadonlySet<T>",
+}
+`;
+
+exports[`sets and maps > type Test = ReadonlySet<string>; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": "ReadonlySet<T>",
+  "typeToString": "Test",
+}
+`;
+
+exports[`sets and maps > type Test = ReadonlySet<string>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "ReadonlySet<string>",
+  "typeNodeToString": "ReadonlySet<string>",
+  "typeReferenceNode": "ReadonlySet<T>",
+}
+`;
+
+exports[`sets and maps > type Test = Set<string>; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": "Set<T>",
+  "typeToString": "Test",
+}
+`;
+
+exports[`sets and maps > type Test = Set<string>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "Set<string>",
+  "typeNodeToString": "Set<string>",
+  "typeReferenceNode": "Set<T>",
+}
+`;
+
+exports[`tuples > type Test = [{ foo: string }, { bar: number }]; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`tuples > type Test = [{ foo: string }, { bar: number }]; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "[{ foo: string }, { bar: number }]",
+  "typeNodeToString": "[{}, {}]",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`tuples > type Test = [string, number, boolean]; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`tuples > type Test = [string, number, boolean]; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "[string, number, boolean]",
+  "typeNodeToString": "[string, number, boolean]",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`tuples > type Test = Readonly<[{ foo: string }, { bar: number }]>; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "readonly [{ foo: string; }, { bar: number; }]",
+}
+`;
+
+exports[`tuples > type Test = Readonly<[{ foo: string }, { bar: number }]>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "Readonly<[{ foo: string }, { bar: number }]>",
+  "typeNodeToString": "Readonly<[{}, {}]>",
+  "typeReferenceNode": "Readonly<T>",
+}
+`;
+
+exports[`tuples > type Test = Readonly<[string, number, boolean]>; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "readonly [string, number, boolean]",
+}
+`;
+
+exports[`tuples > type Test = Readonly<[string, number, boolean]>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "Readonly<[string, number, boolean]>",
+  "typeNodeToString": "Readonly<[string, number, boolean]>",
+  "typeReferenceNode": "Readonly<T>",
+}
+`;
+
+exports[`tuples > type Test = readonly [{ foo: string }, { bar: number }]; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`tuples > type Test = readonly [{ foo: string }, { bar: number }]; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "readonly [{ foo: string }, { bar: number }]",
+  "typeNodeToString": "readonly [{}, {}]",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`tuples > type Test = readonly [string, number, boolean]; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`tuples > type Test = readonly [string, number, boolean]; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "readonly [string, number, boolean]",
+  "typeNodeToString": "readonly [string, number, boolean]",
+  "typeReferenceNode": null,
+}
+`;

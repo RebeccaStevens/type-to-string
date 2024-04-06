@@ -1,0 +1,115 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`destructuring arrays > const [a, b, ...c] = [1, 2, 3, 4];
+type Test = typeof c; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "[number, number]",
+}
+`;
+
+exports[`destructuring arrays > const [a, b, ...c] = [1, 2, 3, 4];
+type Test = typeof c; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "typeof c",
+  "typeNodeToString": "[number, number]",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`destructuring arrays > const [a, b, ...c] = [1, 2, 3, 4];"
+type Test = typeof a; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "number",
+}
+`;
+
+exports[`destructuring arrays > const [a, b, ...c] = [1, 2, 3, 4];"
+type Test = typeof a; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "typeof a",
+  "typeNodeToString": "number",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`destructuring arrays > const [a, b, ...c] = [1, 2, 3, 4];"
+type Test = typeof b; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "number",
+}
+`;
+
+exports[`destructuring arrays > const [a, b, ...c] = [1, 2, 3, 4];"
+type Test = typeof b; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "typeof b",
+  "typeNodeToString": "number",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`destructuring objects > const { a, b, ...c } = { a: 1, b: 2, d: 4, e: 5 };
+type Test = typeof c; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "{ d: number; e: number; }",
+}
+`;
+
+exports[`destructuring objects > const { a, b, ...c } = { a: 1, b: 2, d: 4, e: 5 };
+type Test = typeof c; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "typeof c",
+  "typeNodeToString": "{ d: number; e: number; }",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`destructuring objects > const { a, b, ...c } = { a: 1, b: 2, d: 4, e: 5 };"
+type Test = typeof a; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "number",
+}
+`;
+
+exports[`destructuring objects > const { a, b, ...c } = { a: 1, b: 2, d: 4, e: 5 };"
+type Test = typeof a; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "typeof a",
+  "typeNodeToString": "number",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`destructuring objects > const { a, b, ...c } = { a: 1, b: 2, d: 4, e: 5 };"
+type Test = typeof b; 1`] = `
+{
+  "typeAlias": null,
+  "typeReference": null,
+  "typeToString": "number",
+}
+`;
+
+exports[`destructuring objects > const { a, b, ...c } = { a: 1, b: 2, d: 4, e: 5 };"
+type Test = typeof b; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "typeof b",
+  "typeNodeToString": "number",
+  "typeReferenceNode": null,
+}
+`;

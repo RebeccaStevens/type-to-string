@@ -1,0 +1,86 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Unions > type Test = { foo: string; } | { bar: string; }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Unions > type Test = { foo: string; } | { bar: string; }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ foo: string; } | { bar: string; }",
+  "typeNodeToString": null,
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Unions > type Test = Readonly<{ foo: string; } | { bar: string; }>; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Unions > type Test = Readonly<{ foo: string; } | { bar: string; }>; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "Readonly<{ foo: string; } | { bar: string; }>",
+  "typeNodeToString": null,
+  "typeReferenceNode": "Readonly<T>",
+}
+`;
+
+exports[`Unions > type Test = Readonly<{ foo: string; }> | number; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Unions > type Test = Readonly<{ foo: string; }> | number; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "Readonly<{ foo: string; }> | number",
+  "typeNodeToString": null,
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Unions > type Test = readonly string[] | readonly number[]; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Unions > type Test = readonly string[] | readonly number[]; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "readonly string[] | readonly number[]",
+  "typeNodeToString": null,
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Unions > type Test = string | number 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Unions > type Test = string | number 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "string | number",
+  "typeNodeToString": null,
+  "typeReferenceNode": null,
+}
+`;

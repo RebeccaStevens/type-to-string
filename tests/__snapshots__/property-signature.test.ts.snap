@@ -1,0 +1,86 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Property Signatures > type Test = { [key: string]: string }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Property Signatures > type Test = { [key: string]: string }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ [key: string]: string }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Property Signatures > type Test = { readonly [key: string]: { foo: string[]; }; }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Property Signatures > type Test = { readonly [key: string]: { foo: string[]; }; }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ readonly [key: string]: { foo: string[]; }; }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Property Signatures > type Test = { readonly [key: string]: { readonly foo: string; }; }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Property Signatures > type Test = { readonly [key: string]: { readonly foo: string; }; }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ readonly [key: string]: { readonly foo: string; }; }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Property Signatures > type Test = { readonly [key: string]: readonly string[] }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Property Signatures > type Test = { readonly [key: string]: readonly string[] }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ readonly [key: string]: readonly string[] }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
+
+exports[`Property Signatures > type Test = { readonly [key: string]: string }; 1`] = `
+{
+  "typeAlias": "Test",
+  "typeReference": null,
+  "typeToString": "Test",
+}
+`;
+
+exports[`Property Signatures > type Test = { readonly [key: string]: string }; 2`] = `
+{
+  "typeNodeAlias": "Test",
+  "typeNodeAsWritten": "{ readonly [key: string]: string }",
+  "typeNodeToString": "{}",
+  "typeReferenceNode": null,
+}
+`;
